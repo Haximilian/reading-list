@@ -93,6 +93,29 @@
         </tr>
         <tr>
             <td>
+                <a href="https://www.nist.gov/blogs/cybersecurity-insights/differential-privacy-privacy-preserving-data-analysis-introduction-our">Differential Privacy for Privacy-Preserving Data Analysis: An Introduction to our Blog Series</a>
+            </td>
+            <td>✅ [completed]</td>
+            <td>May 21, 2025</td>
+            <td>
+                The article states the definition of Differential Privacy.
+                Given a dataset A and query Q, you should generate response R with P.a. probability.
+                If you're given a dataset B such that B differs with A in only 1 records, for query Q,
+                you should generate response R with P.b. probability.
+
+                The ratio of P.a. and P.b. should be eulers number to the power of epsilon.
+
+                Each query has a sensitivity attribute.
+                
+                A query could be "return the number of people that live in X city."
+                This query could return response R.
+                If you remove me from the dataset and I live in X city, the query would return a value R - 1 with 100% probability.
+                To maintain privacy, we usually inject noise into the query response.
+                Therefore, the removal of an entry would alter the discrete response probability distribution.
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a href="https://desfontain.es/blog/k-anonymity.html">k-anonymity</a>
             </td>
             <td>✅ [completed]</td>
