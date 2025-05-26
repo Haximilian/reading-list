@@ -60,7 +60,7 @@
             <td>✅ [completed]</td>
             <td>May 24, 2025</td>
             <td>
-                They didn’t state this explicitly but, they would like to predict the next word in a sentence. NNLM, the previous state of the art transforms words into 1-of-V vectors. V refers to the size of the vocabulary. Using a common projection matrix with V * D parameters, the algorithm projects context size N = 10 words to the project layer with N * D values. The hidden layer contains H activations and afterwards you transform that into an 1-of-V vector again which you would apply a softmax. In total, this architecture has V * D + N * D * H + H * V “computational complexity per training cycle”.
+                NNLM, the previous state of the art transforms words into 1-of-V vectors. V refers to the size of the vocabulary. Using a common projection matrix with V * D parameters, the algorithm projects context size N = 10 words to the project layer with N * D values. The hidden layer contains H activations and afterwards you transform that into an 1-of-V vector again which you would apply a softmax. In total, this architecture has V * D + N * D * H + H * V “computational complexity per training cycle”.
 
                 A log-linear model is a mathematical model that takes the form of a function whose logarithm equals a linear combination of the parameters of the model.
 
