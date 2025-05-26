@@ -55,6 +55,22 @@
         </tr>
         <tr>
             <td>
+                <a href="https://arxiv.org/pdf/1301.3781">Efficient Estimation of Word Representations in Vector Space</a>
+            </td>
+            <td>✅ [completed]</td>
+            <td>May 24, 2025</td>
+            <td>
+                They didn’t state this explicitly but, they would like to predict the next word in a sentence. NNLM, the previous state of the art transforms words into 1-of-V vectors. V refers to the size of the vocabulary. Using a common projection matrix with V * D parameters, the algorithm projects context size N = 10 words to the project layer with N * D values. The hidden layer contains H activations and afterwards you transform that into an 1-of-V vector again which you would apply a softmax. In total, this architecture has V * D + N * D * H + H * V “computational complexity per training cycle”.
+
+                A log-linear model is a mathematical model that takes the form of a function whose logarithm equals a linear combination of the parameters of the model.
+
+                The term back-propagation and gradient descent are not the same. The term back-propagation refers to the calculation of the gradient while gradient descent refers to the minimization of the loss function by adjusting the weights according to the gradient.
+
+                Why do they call an embedding a “distributed representation of words”? Why do you use cosine distance? Why does the paper state the “computational complexity per training cycle” of NNLM as N * D + N * D * H + H * V?
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Language Models are Unsupervised Multitask Learners</a>
             </td>
             <td>❌ [todo]</td>
